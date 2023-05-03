@@ -4,7 +4,13 @@
     box-sizing: border-box;
 }
 
+
+body {
+    background: rgb(117, 68, 34);
+
+}
 .game-board {
+    /* display: flex; */
    width: 100%;
    height: 500px;
    border-bottom: 15px solid #008300;
@@ -106,8 +112,9 @@ p {
 #bottons {
     display: flex;
     width: 100%;
-    height: 36.6vh;
+    height: 100%;
     align-items: center;
+    margin-top: 70px;
 
     background: rgb(117, 68, 34);
 }
@@ -119,10 +126,11 @@ p {
     align-items: center;
     justify-content: end;
     margin-right: 25px;
+    /* opacity: 0; */
 }
 
 #restart-button{
-    display: flex;
+    display: none;
     width: 15vh;
     height: 2rem;
     border-radius: 15px;

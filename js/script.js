@@ -4,6 +4,7 @@ const pipe = document.querySelector('.pipe');
 const gameover = document.querySelector('.gameover');
 const nuvens = document.querySelector('.nuvens');
 const pontuacao = document.querySelector('#pontuacao');
+const restart = document.querySelector('#restart-button');
 
 let contadorPontuacao = 0;
 let isPaused = false;
@@ -73,6 +74,7 @@ const loop = setInterval(() => {
         mario.style.marginLeft = '50px'
 
         gameover.style.opacity = 1;
+        restart.style.display = 'flex';
 
         nuvens.classList.add('paused');
         
@@ -80,9 +82,11 @@ const loop = setInterval(() => {
         
         contadorPontuacao = 0; 
 
+
     } else { 
         updateScore();
         console.log(pipePosition, marioPosition);
+
     }
 
 }, 10)
